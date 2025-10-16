@@ -1,0 +1,109 @@
+/* --- Global Reset & Layout --- */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #e0f2f1; 
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* --- Game Container --- */
+#gameContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px; 
+    margin: 0 auto;
+    border: 5px solid #004d40;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+    padding: 15px;
+}
+
+.game-title {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.5rem;
+    color: #004d40;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 0px #b2dfdb;
+}
+
+/* --- Score, High Score, & Reset Button --- */
+#controls-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+    background-color: #e0f7fa; 
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #b2dfdb;
+}
+
+.info-text {
+    font-family: 'Permanent Marker', cursive;
+    color: #333;
+    font-size: 1.15rem;
+    min-width: 30%; 
+}
+
+/* --- Reset Button --- */
+#resetBtn {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1rem;
+    padding: 8px 15px;
+    background-color: hsl(160, 80%, 65%);
+    border: 2px solid #004d40;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 3px 3px 0px #004d40;
+    flex-grow: 1;
+    max-width: 120px;
+    color: #004d40;
+}
+
+#resetBtn:hover {
+    background-color: hsl(160, 80%, 75%);
+    box-shadow: none;
+    transform: translate(3px, 3px);
+}
+
+#gameBoard {
+    background-color: #ffffff;
+    border: 2px solid #004d40;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.instruction-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* --- Responsiveness for smaller screens --- */
+@media (max-width: 550px) {
+    #gameContainer {
+        padding: 10px;
+    }
+    .game-title {
+        font-size: 2rem;
+    }
+    .info-text {
+        font-size: 1rem;
+        min-width: 45%; 
+    }
+    #resetBtn {
+        font-size: 0.9rem;
+        padding: 6px 10px;
+        max-width: 100px;
+    }
+}

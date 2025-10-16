@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Snake Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <!-- Link to the custom CSS file -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <h1 class="game-title">The Classic Snake</h1>
+        <div id="controls-box">
+            <div id="score" class="info-text">Score: <span id="currentScore">0</span></div>
+            <div id="high-score" class="info-text">High Score: <span id="bestScore">0</span></div>
+            <button id="resetBtn">Reset</button>
+        </div>
+        <canvas id="gameBoard" width="500" height="500"></canvas>
+        <p class="instruction-text">Use Arrow Keys (← ↑ → ↓) to play.</p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
